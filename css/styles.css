@@ -646,10 +646,10 @@ progress {
   margin-left: auto;
 }
 
-@media (min-width: 350px) {
+@media (min-width: 350px) and (max-width: 503px) {
   header.masthead .masthead-heading {
     padding-bottom: 75px;
-    padding-top: 100px;
+    padding-top: 40px;
   }
 }
 
