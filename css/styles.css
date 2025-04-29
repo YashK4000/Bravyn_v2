@@ -11317,7 +11317,8 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-/* Add border and hover effect for service cards */
+@media screen and (min-width: 1024px) {
+  /* Add border and hover effect for service cards */
 #services .col-md-4 {
   border: 2px solid #ddd; /* Add a border */
   border-radius: 10px;
@@ -11327,4 +11328,5 @@ section#contact form#contactForm :-ms-input-placeholder {
 #services .col-md-4:hover {
   box-shadow: 0 0 15px 5px white; /* Add white box shadow */
   transform: scale(1.05); /* Expand the size slightly */
+}
 }
