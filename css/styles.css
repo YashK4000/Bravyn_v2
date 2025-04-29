@@ -646,6 +646,13 @@ progress {
   margin-left: auto;
 }
 
+@media (min-width: 400px) {
+  header.masthead .masthead-heading {
+    padding-bottom: 75px;
+    padding-top: 100px;
+  }
+}
+
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
