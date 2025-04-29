@@ -646,7 +646,7 @@ progress {
   margin-left: auto;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 350px) {
   header.masthead .masthead-heading {
     padding-bottom: 75px;
     padding-top: 100px;
