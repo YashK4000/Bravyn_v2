@@ -5296,6 +5296,10 @@ textarea.form-control-lg {
 }
 .modal.show .modal-dialog {
   transform: none;
+  width: 75vw;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
 }
 .modal.modal-static .modal-dialog {
   transform: scale(1.02);
@@ -11055,6 +11059,9 @@ header.masthead .masthead-heading {
 .portfolio-modal .modal-content {
   padding-top: 6rem;
   padding-bottom: 6rem;
+  /* margin-left: 5rem;
+  margin-right: 5rem; */
+  max-width: 100%;
   text-align: center;
 }
 .portfolio-modal .modal-content h2, .portfolio-modal .modal-content .h2 {
@@ -11371,6 +11378,73 @@ section#contact form#contactForm :-ms-input-placeholder {
 .container.timeline{
   padding-bottom: 20px;
 }
+
+/* .portfolio-modal > .modal-content *:not(h2) {
+  font-size: 3rem;
+  line-height: 3rem;
+} */
+.portfolio-modal .modal-content h2, .portfolio-modal .modal-content .h2{
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.portfolio-modal .modal-content p.item-intro {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.modalImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.modal.show .modal-dialog {
+  transform: none;
+  width: 90vw; 
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.portfolio-modal .close-modal {
+  width: 1rem;
+  height: 1rem;
+}
+
+.portfolio-modal .modal-dialog {
+  margin: 1rem;
+  max-width: 100vw;
+}
+
+.modal-body {
+  padding: 0px;
+}
+
+.portfolio-modal .modal-content {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.portfolio-modal .modal-content p {
+  font-size: 12px;
+  margin-bottom: 1rem;
+}
+
+.portfolio-modal .modal-content ul.list-inline {
+  font-size: 12px;
+}
+
+.btn-xl {
+  font-size: 10px;
+}
+
+.portfolio-modal .modal-content img {
+  margin-bottom: 1rem;
+}
+
 }
 
 #form-success, #form-error {
