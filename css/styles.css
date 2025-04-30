@@ -1,15 +1,4 @@
 @charset "UTF-8";
-/*!
-* Start Bootstrap - Agency v7.0.12 (https://startbootstrap.com/theme/agency)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
-*/
-/*!
- * Bootstrap  v5.2.3 (https://getbootstrap.com/)
- * Copyright 2011-2022 The Bootstrap Authors
- * Copyright 2011-2022 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11106,8 +11095,8 @@ header.masthead .masthead-heading {
 }
 .timeline:before {
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: 200px;
+  bottom: 50px;
   left: 40px;
   width: 2px;
   margin-left: -1.5px;
@@ -11376,4 +11365,37 @@ section#contact form#contactForm :-ms-input-placeholder {
 .container.timeline{
   padding-bottom: 20px;
 }
+}
+
+#form-success, #form-error {
+  opacity: 0;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  transition: opacity 0.5s ease;
+}
+#form-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+#form-error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+/* Spinner */
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(0,0,0,0.2);
+  border-top: 2px solid #000;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
 }
