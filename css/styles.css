@@ -599,6 +599,7 @@ progress {
 }
 
 .img-fluid {
+  border-radius: 20px;
   max-width: 100%;
   height: auto;
 }
@@ -5275,9 +5276,18 @@ textarea.form-control-lg {
   display: none;
   width: 100%;
   height: 100%;
+  /* max-height: 95vh;
+  box-sizing: border-box; */
   overflow-x: hidden;
   overflow-y: auto;
   outline: 0;
+}
+
+.modalImage{
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 .modal-dialog {
@@ -5331,6 +5341,10 @@ textarea.form-control-lg {
   border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
   border-radius: var(--bs-modal-border-radius);
   outline: 0;
+}
+
+.modal-content h2,p,li{
+  color: black;
 }
 
 .modal-backdrop {
@@ -11010,6 +11024,7 @@ header.masthead .masthead-heading {
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  border-radius: 20px;
   display: flex;
   position: absolute;
   width: 100%;
@@ -11044,7 +11059,8 @@ header.masthead .masthead-heading {
 }
 
 .portfolio-modal .modal-dialog {
-  margin: 1rem;
+  /* margin: 7rem; */
+  margin: 4rem;
   max-width: 100vw;
 }
 .portfolio-modal .modal-content {
@@ -11339,5 +11355,25 @@ section#contact form#contactForm :-ms-input-placeholder {
 #services .col-md-4:hover {
   box-shadow: 0 0 15px 5px white; /* Add white box shadow */
   transform: scale(1.05); /* Expand the size slightly */
+}
+}
+
+@media screen and (min-width: 300px) and (max-width: 1024px) {
+.col-md-4:not(:last-child){
+  padding-bottom: 70px;
+}
+.page-section{
+  padding-bottom: 0px;
+}
+
+#about{
+  padding-bottom: 30px;
+}
+
+#contact .btn{
+  margin-bottom: 20px
+}
+.container.timeline{
+  padding-bottom: 20px;
 }
 }
