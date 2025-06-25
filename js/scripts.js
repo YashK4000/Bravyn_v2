@@ -40,7 +40,7 @@ form.addEventListener('submit', async (e) => {
   submitButton.innerHTML = 'Sending <span class="spinner"></span>';
 
   try {
-    const response = await fetch('https://formspree.io/f/xpwdqdjo', {
+    const response = await fetch('https://formspree.io/f/xrbkoybv', {
       method: 'POST',
       body: formData,
       headers: {
